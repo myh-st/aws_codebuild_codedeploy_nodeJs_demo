@@ -11,15 +11,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cicd-demo
+      app: github-cicd-demo
   template:
     metadata:
       labels:
-        app: cicd-demo
+        app: github-cicd-demo
     spec:
       containers:
-        - image: 120717539064.dkr.ecr.us-west-2.amazonaws.com/cicd-demo:latest
+        - image: $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
           imagePullPolicy: Always
           name: cicd-demo
           ports:
-            - containerPort: 3000
+            - containerPort: 4000
