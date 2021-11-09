@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/version: "1.0.0"
     app.kubernetes.io/component: backend
     app.kubernetes.io/managed-by: kubectl
-  name: cicd-demo
+  name: github-cicd-demo
 spec:
   selector:
     app: github-cicd-demo
