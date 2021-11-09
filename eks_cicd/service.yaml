@@ -10,9 +10,9 @@ metadata:
   name: cicd-demo
 spec:
   selector:
-    app: cicd-demo
+    app: github-cicd-demo
   type: LoadBalancer
   ports:
    -  protocol: TCP
       port: 80
-      targetPort: 3000
+      targetPort: 4000
