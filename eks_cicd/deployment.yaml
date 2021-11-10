@@ -20,6 +20,6 @@ spec:
       containers:
         - image: $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
           imagePullPolicy: Always
-          name: cicd-demo
+          name: cicddemo
           ports:
             - containerPort: 4000
