@@ -2,16 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app.kubernetes.io/name: cicd-demo
-    app.kubernetes.io/instance: cicd-demo-instance
+    app.kubernetes.io/name: github-cicd-demo
+    app.kubernetes.io/instance: github-cicd-demo-instance
     app.kubernetes.io/version: '1.0.0'
     app.kubernetes.io/managed-by: kubectl
-  name: cicd-demo-deployment
+  name: github-cicd-demo-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cicd-demo
+      app: github-cicd-demo
   template:
     metadata:
       labels:
