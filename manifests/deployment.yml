@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aksrg1-aa71"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aksrg1-aa71"
+  template:
+    metadata:
+      labels:
+        app: "aksrg1-aa71"
+    spec:
+      containers:
+        - name: "aksrg1-aa71"
+          image: "pttgcregistry.azurecr.io/aksrg1"
+          ports:
+          - containerPort: 3000
